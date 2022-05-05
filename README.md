@@ -1,10 +1,10 @@
 ﻿# VanishRobots
 
-1) ADD SURVIVOR
+**1) ADD SURVIVOR**
 endpoint:  http://localhost:8080/addSurvivor
 method: POST
 
-**sample data:**
+Samples:
 sample 1
 
 {
@@ -59,13 +59,15 @@ sample 4
 
 Response: 201 if successfully created.
 
-2) Update Survivor location
+**2) Update Survivor location**
+
 endpoint: http://localhost:8080/updateSurvivorLocation/1?latitudeLongitude={latitudeLongitude}
 method: patch
 sample: http://localhost:8080/updateSurvivorLocation/1?latitudeLongitude=38.38.39,38.37.83
 Response: 200 if successfully updated.
 
-3) report infected person
+**3) report infected person**
+
 endpoint: http://localhost:8080/reportInfection?reportingSurvivorId={reportingSurvivorId}&infectedSurvivorId={infectedSurvivorId}
 method: Get
 sample1: http://localhost:8080/reportInfection?reportingSurvivorId=3&infectedSurvivorId=1
@@ -76,7 +78,8 @@ Report on survivor 1 with three different survivor Id's. Then survivor 1 status 
 
 Response: 201 if all validations are passed. otherwise 208 if duplicate request.
 
-4: Get Reports
+**4: Get Reports**
+
 endpoint: http://localhost:8080/reports
 method: Get
 sample: http://localhost:8080/reports
