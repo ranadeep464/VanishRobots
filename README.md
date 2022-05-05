@@ -1,5 +1,18 @@
 ﻿# VanishRobots
 
+To build the project: mvn clean install
+
+To run the project: mvn spring-boot:run
+
+Instructions:
+
+1. Add sample survivors through the below endpoint and data.
+
+2. Report survivor 1 as infected with below urls using three different survivor id's.
+
+3. Call getReports endpoint and check all the data and reports in the response.
+
+
 **1) ADD SURVIVOR**
 
 
